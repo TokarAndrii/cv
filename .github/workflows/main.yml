@@ -1,0 +1,40 @@
+name: Main workflow
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy-gh-pages:
+    runs-on: ubuntu-20.04
+    name: Deploy github pages
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: Install node_modules
+        run: npm install --frozen-lockfile
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Setup git identity
+        run: |
+          git config --global user.name 'Release Bot'
+          git config --global user.email 'noreply@edenlab.com.ua'
+      - name: Build
+        run: npm run build
+      - name: Deploy to GH pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          commit_message: ${{ github.event.head_commit.message }}
