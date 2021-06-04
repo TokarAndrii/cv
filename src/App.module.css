@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contactItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.divider {
+  border: 1px solid rgb(94, 92, 90);
+}
+
+.sectionName {
+  text-transform: uppercase;
+  color: rgb(88, 88, 88);
+  margin-bottom: -12px;
+}

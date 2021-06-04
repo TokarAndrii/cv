@@ -1,0 +1,9 @@
+.sectionName {
+  text-transform: capitalize;
+  color: rgb(88, 88, 88);
+  font-weight: bold;
+}
+
+.row {
+  margin-bottom: 6px;
+}

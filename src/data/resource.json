@@ -1,0 +1,107 @@
+{
+  "name": {
+    "firstName": "Andrii",
+    "lastName": "Tokar"
+  },
+  "position": "Full stack JS developer",
+  "contacts": {
+    "address": "Kyiv, Golosiivskiy av. 110",
+    "phone": "+38 (097) 395 87 38",
+    "email": "tokar.andrii@gmail.com",
+    "github": "https://github.com/TokarAndrii",
+    "linkedin": "https://www.linkedin.com/in/andrii-tokar-096aa0109/",
+    "skype": "tokarandrii"
+  },
+  "profileDescription": "I have been working in the field of front-end development more than 3 years. During this period I’ve gained experience in building: web and native (ios, android) applications; backend servers for commercial projects. I achieved great results in front-end and full-stack developing using: JavaScript, HTML5, CSS3, Node, TypeScript, React, React Native, GraphQL, Redux, Jest, Enzyme, Docker and other. Also in my work I used OOP concepts, SOLID, DRY, KISS. I want to work as JS developer (React, React Native, TypeScript, Node) at a progressive company on interesting projects where I can grow as programmer and bring maximum benefits to the company.",
+  "education": [
+    {
+      "year": "2006",
+      "nameEducational": "Kyiv National Economic University named Vadim Hetman",
+      "training": "Bachelor Degree at Financial Analytics and Engineering in Bank"
+    },
+    {
+      "year": "2015",
+      "nameEducational": "Art-Code study center",
+      "training": "Java Advanced Course, OOP Course"
+    },
+    {
+      "year": "2017",
+      "nameEducational": "Info-pulse",
+      "training": "Html coding Course"
+    },
+    {
+      "year": "2018",
+      "nameEducational": "Go-IT",
+      "training": "Front-end Course"
+    },
+    {
+      "year": "2018",
+      "nameEducational": "Go-IT",
+      "training": "MERN stack (Mongo, Express, React, Node) Course"
+    }
+  ],
+  "skills": {
+    "programmingLanguages": {
+      "keyName": "programming languages",
+      "values": ["JavaScript", "TypeScript", "Java (as additional)"]
+    },
+    "technologies": {
+      "keyName": "technologies",
+      "values": [
+        "React",
+        "ReactNative",
+        "Node",
+        "GraphQL",
+        "Docker",
+        "Yarn",
+        "Npm",
+        "Redux",
+        "Thunk",
+        "Saga",
+        "Jest",
+        "Enzyyme",
+        "Webpack"
+      ]
+    },
+    "databases": {
+      "keyName": "databases",
+      "values": ["MySQL", "MongoDB", "PostgreSQL"]
+    },
+    "versionControl": {
+      "keyName": "version control",
+      "values": ["Git"]
+    },
+    "web": {
+      "keyName": "web",
+      "values": ["Html", "Css"]
+    },
+    "languages": {
+      "keyName": "languages",
+      "values": ["ukrainian (native)", "english (intermediate)"]
+    }
+  },
+  "experience": [
+    {
+      "position": "FrontEnd developer",
+      "company": "Edenlab LLC",
+      "duties": "Dueties: take part at development and support of company’s products as full stack web developer (React, Node, TypeScript) in the field of medicine.",
+      "period": {
+        "from": "11.01.2019",
+        "to": ""
+      },
+      "projects": [
+        {
+          "name": "",
+          "description": "National Health Service portal for patients, doctors and administration of NHS.",
+          "duties": "take part at support of project: implement new features and bug fixes.",
+          "links": [
+            "https://admin.dev.edenlab.com.ua/",
+            "https://account.demo.edenlab.com.ua/",
+            "https://portal.dev.edenlab.com.ua/"
+          ],
+          "technologies": ["React", "GraphQl", "Apollo", "Rebass", "LinguiJS"]
+        }
+      ]
+    }
+  ]
+}
